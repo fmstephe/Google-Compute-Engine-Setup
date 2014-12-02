@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -d ~/google-cloud-sdk ]
+if [[ -d ~/google-cloud-sdk ]] ; then
 	echo "Google Cloud SDK already installed"
 	exit
 fi
