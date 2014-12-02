@@ -5,7 +5,8 @@ if [[ -d ~/google-cloud-sdk ]] ; then
 	exit
 fi
 wget https://dl.google.com/dl/cloudsdk/release/google-cloud-sdk.tar.gz
-tar xfv google-cloud-sdk.tar.gz ~/
+tar xfvz google-cloud-sdk.tar.gz
+mv google-cloud-sdk ~
 rm google-cloud-sdk.tar.gz
 cd ~/google-cloud-sdk
 ./install.sh
